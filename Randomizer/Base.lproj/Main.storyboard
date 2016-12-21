@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Randomizer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,7 +20,51 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iugus super randomizer 2016 turbo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NI-Nu-RWQ">
+                                <rect key="frame" x="32" y="52" width="311" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aUD-eS-9uK">
+                                <rect key="frame" x="16" y="91" width="343" height="407"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkZ-Nv-Lpb">
+                                <rect key="frame" x="16" y="605" width="343" height="30"/>
+                                <state key="normal" title="Sortear"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBX-Cy-Oas">
+                                <rect key="frame" x="32" y="567" width="311" height="30"/>
+                                <state key="normal" title="Remover"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nome sorteado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39Q-q5-Yjh">
+                                <rect key="frame" x="16" y="530" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="39Q-q5-Yjh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="1Zc-px-JGu"/>
+                            <constraint firstAttribute="trailing" secondItem="rkZ-Nv-Lpb" secondAttribute="trailing" constant="16" id="3w0-fC-Psz"/>
+                            <constraint firstAttribute="trailing" secondItem="aUD-eS-9uK" secondAttribute="trailing" constant="16" id="5fG-O4-utn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rkZ-Nv-Lpb" secondAttribute="bottom" constant="32" id="BKw-eN-yPK"/>
+                            <constraint firstAttribute="trailing" secondItem="yBX-Cy-Oas" secondAttribute="trailing" constant="32" id="CJ9-LB-vGu"/>
+                            <constraint firstItem="9NI-Nu-RWQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="Dtz-s6-aQs"/>
+                            <constraint firstItem="9NI-Nu-RWQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="32" id="KQ1-cv-HYs"/>
+                            <constraint firstAttribute="trailing" secondItem="39Q-q5-Yjh" secondAttribute="trailing" constant="16" id="Nrd-Zm-ErY"/>
+                            <constraint firstItem="aUD-eS-9uK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="NsL-Y0-cJL"/>
+                            <constraint firstItem="aUD-eS-9uK" firstAttribute="top" secondItem="9NI-Nu-RWQ" secondAttribute="bottom" constant="16" id="PZL-Ah-Rmg"/>
+                            <constraint firstItem="rkZ-Nv-Lpb" firstAttribute="top" secondItem="yBX-Cy-Oas" secondAttribute="bottom" constant="8" id="W4z-L8-4DG"/>
+                            <constraint firstItem="yBX-Cy-Oas" firstAttribute="top" secondItem="39Q-q5-Yjh" secondAttribute="bottom" constant="16" id="W7G-zA-3jb"/>
+                            <constraint firstAttribute="trailing" secondItem="9NI-Nu-RWQ" secondAttribute="trailing" constant="32" id="Xfd-AI-Prw"/>
+                            <constraint firstItem="yBX-Cy-Oas" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="32" id="dKP-tS-HcH"/>
+                            <constraint firstItem="rkZ-Nv-Lpb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="mzo-2I-9w4"/>
+                            <constraint firstItem="39Q-q5-Yjh" firstAttribute="top" secondItem="aUD-eS-9uK" secondAttribute="bottom" constant="32" id="teK-hA-8um"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
